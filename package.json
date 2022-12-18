@@ -1,0 +1,13 @@
+{
+  "name": "credit-card-interest-manager",
+  "version": "1.0.0",
+  "description": "Credit card interest manager",
+  "main": "index.js",
+  "author": "Rusiru Abhisheak",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
