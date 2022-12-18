@@ -1,0 +1,38 @@
+Program
+
+creditCardLimit = 500000
+interestFreeDays = 51
+minimumAmountPay = 25000
+monthlyInterest = 0.03
+creditCardPayDate = 26 (26th of each month)
+
+model Expense {
+	expenseAmount,
+	expeseDateTime
+}
+
+function calcInterestForTotalExpense(expense Expese) {
+	totalExpenseInterest = (expesense.expenseAmount * monthlyInterest)
+	amountAfterInterest = monthlyInterest + expenseAmount
+
+	return amountAfterInterest
+}
+
+function payAmountWithin51Days(expense Expense, paymentAmount) {
+	remainingAmount = expense.expenseAmount - paymentAmount
+	return remainingAmount
+}
+
+function calcInterestForRemainingAmont(remainingAmount) {
+	remainingAmountInterest = remainingAmount * monthlyInterest
+	amountAfterRemainingAmountInterest = remainingAmount + remainingAmountInterest
+
+	return amountAfterRemainingAmountInterest
+}
+
+function calcInterestForDayCount(remainingAmount, dayCount) { // dayCount possible values - 25, 6, 30
+	remainingAmountInterest = (remainingAmount * monthlyInterest * dayCount) / noOfDaysInMonth
+	amountUntilNextPayDate = remainingAmount + remainingBalanceInterest
+
+	return amountUntilNextPayDate
+}

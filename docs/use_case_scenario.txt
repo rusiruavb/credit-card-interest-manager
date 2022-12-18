@@ -1,0 +1,13 @@
+Use Case Scenario
+
+* Calcualte the interest for total expense (show to the user)
+if user pay amount wihtin the 51 days
+	* Deduct the amount from the expense amount
+	* Calculate the interest for the remaining balance
+	* Calculate the interest for the next 25 days
+	if user pay the amount at 26th day of the month
+		* Calculate the interest for the next 6 days
+	else 
+		* Calculate the interest for the next 30 days
+
+https://dev.to/siddharthvenkatesh/docker-setup-for-yarn-workspaces-4pnj
