@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FormElement } from "@nextui-org/react";
+import { useState } from "react";
+import "./App.css";
+import EMButton from "./toolkit/EMButton/EMButton";
+import { EMCreditCardSecurityCodeInput } from "./toolkit/EMCreditCard";
+import EMTextInput from "./toolkit/EMTextInput/EMTextInput";
 
 function App() {
+  const [value, setValue] = useState("");
+
+  const onChange = (e: React.ChangeEvent<FormElement>) => {
+    setValue(e.target.value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <EMButton title="Test button" />
+      <EMTextInput shadow={false} clearable onChange={onChange} value={value} fullWidth />
+      <EMCreditCardSecurityCodeInput value={value} onChange={onChange} />
+    </>
   );
 }
 
